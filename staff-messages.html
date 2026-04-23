@@ -1,0 +1,99 @@
+<!-- staff-messages.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Queries</title>
+<link rel="stylesheet" href="landing.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+
+    <div>
+      <h2>Smart Lab</h2>
+
+      <div class="staff-user">
+        <h3>Proff. Sakshi Kumari</h3>
+        <p>Staff</p>
+      </div>
+
+      <nav class="menu-list">
+        <a href="staff-dashboard.html">Overview</a>
+        <a href="staff-notices.html">Notices</a>
+        <a href="staff-labs.html">Manage Labs</a>
+        <a href="staff-machines.html">Manage Machines</a>
+        <a href="staff-maintenance.html">Maintenance</a>
+        <!-- <a href="staff-complaints.html">Complaints</a> -->
+        <a href="staff-messages.html" class="active">Messages</a>
+      </nav>
+    </div>
+
+    <a href="Landing.html" class="logout-btn">Logout</a>
+
+  </aside>
+
+
+  <!-- Main -->
+  <main class="main-content">
+
+    <div class="top-title">
+      <h1>Student Queries</h1>
+      <p>Respond to messages from students</p>
+    </div>
+
+    <div class="chat-card">
+
+      <!-- Chat Header -->
+      <div class="chat-header">
+        <h2>Student Global Chat</h2>
+      </div>
+
+      <!-- Messages -->
+      <div class="chat-body" id="chatBody">
+
+        <div class="msg left">
+          <div class="bubble student">
+            <small>Avani</small>
+            <p>Sir, is there any lab today?</p>
+          </div>
+          <span>10:20 AM</span>
+        </div>
+<!-- 
+        <div class="msg left">
+          <div class="bubble student">
+            <small>Anjali Singh</small>
+            <p>Ma'am, oscilloscope display is blank.</p>
+          </div>
+          <span>10:28 AM</span>
+        </div> -->
+
+        <div class="msg right">
+          <div class="bubble staff">
+            <p>No Avani.</p>
+          </div>
+          <span>10:31 AM</span>
+        </div>
+
+      </div>
+
+      <!-- Input -->
+      <form class="chat-footer" onsubmit="sendMessage(event)">
+        <input type="text" id="messageInput" placeholder="Type your reply...">
+        <button type="submit">Send</button>
+      </form>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="landing.js"></script>
+</body>
+</html>

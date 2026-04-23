@@ -1,0 +1,117 @@
+<!-- staff-machines.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Machine Management</title>
+<link rel="stylesheet" href="landing.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+
+    <div>
+      <h2>Smart Lab</h2>
+
+      <div class="staff-user">
+        <h3>Dr. Priya Nait</h3>
+        <p>Staff</p>
+      </div>
+
+      <nav class="menu-list">
+        <a href="staff-dashboard.html">Overview</a>
+        <a href="staff-notices.html">Notices</a>
+        <a href="staff-lab.html">Manage Labs</a>
+        <a href="staff-machines.html" class="active">Manage Machines</a>
+        <a href="staff-maintenance.html">Maintenance</a>
+        <!-- <a href="#">Complaints</a> -->
+        <a href="staff-messages.html">Messages</a>
+      </nav>
+    </div>
+
+    <a href="Landing.html" class="logout-btn">Logout</a>
+
+  </aside>
+
+  <!-- Main -->
+  <main class="main-content">
+
+    <div class="top-title">
+      <h1>Machine Management</h1>
+      <p>Monitor and update equipment status across all labs</p>
+    </div>
+
+    <div class="card2">
+
+      <h2 class="section-title">All Machines</h2>
+
+      <div class="table-wrap">
+
+        <table class="custom-table">
+
+          <thead>
+            <tr>
+              <th>Machine ID</th>
+              <th>Name</th>
+              <th>Lab</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td class="mono-text">ME-001</td>
+              <td>Brinell Hardness Test</td>
+              <td>Mechanics of Solid Lab</td>
+              <td><span class="badge green">Available</span></td>
+            </tr>
+
+            <tr>
+              <td class="mono-text">ME-002</td>
+              <td>Venturimeter</td>
+              <td>Fluid Mechanics Lab</td>
+              <td><span class="badge green">Available</span></td>
+            </tr>
+
+            <tr>
+              <td class="mono-text">ME-003</td>
+              <td>Torsion Test</td>
+              <td>Fluid Mechanics Lab</td>
+              <td><span class="badge green">Available</span></td>
+            </tr>
+
+            <tr>
+              <td class="mono-text">ME-004</td>
+              <td>Vickers Hardness Test</td>
+              <td>Mechanics of Solid Lab</td>
+              <td><span class="badge red">Faulty</span></td>
+            </tr>
+
+            <tr>
+              <td class="mono-text">ME-005</td>
+              <td>Bernoulli Experiment</td>
+              <td>Fluid Mechanics Lab</td>
+              <td><span class="badge green">Available</span></td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="landing.js"></script>
+</body>
+</html>

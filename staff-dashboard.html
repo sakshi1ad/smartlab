@@ -1,0 +1,119 @@
+<!-- staff-dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staff Dashboard</title>
+<link rel="stylesheet" href="landing.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+
+<aside class="sidebar staff-sidebar">
+
+  <div>
+    <h2>Smart Lab</h2>
+
+    <div class="staff-user">
+      <h3>Proff Sakshi Kumari</h3>
+      <p>Staff</p>
+    </div>
+
+    <nav class="menu-list">
+      <a href="staff-dashboard.html" class="active">Overview</a>
+      <a href="staff-notices.html">Notices</a>
+      <a href="staff-lab.html">Manage Labs</a>
+      <a href="staff-machines.html">Manage Machines</a>
+      <a href="staff-maintenance.html">Maintenance</a>
+      <!-- <a href="">Complaints</a> -->
+      <a href="staff-messages.html">Messages</a>
+    </nav>
+  </div>
+
+  <a href="Landing.html" class="logout-btn">Logout</a>
+
+</aside>
+
+  <!-- Main -->
+  <main class="main-content">
+
+    <div class="top-title">
+      <h1>Staff Overview</h1>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-grid">
+
+      <div class="card2 stat-card">
+        <p>Total Labs</p>
+        <h2>2</h2>
+      </div>
+
+      <div class="card2 stat-card">
+        <p>Total Machines</p>
+        <h2>20</h2>
+      </div>
+
+      <div class="card2 stat-card red-card">
+        <p>Faulty Machines</p>
+        <h2>5</h2>
+      </div>
+
+      <div class="card2 stat-card orange-card">
+        <p>Active Requests</p>
+        <h2>3</h2>
+      </div>
+
+    </div>
+
+    <!-- Complaints -->
+    <div class="card2">
+      <h2>Recent Complaints</h2>
+      <p class="small-text">Latest issues reported by students</p>
+
+      <div class="complaint-row">
+        <div>
+          <h4>Flying wheel is not working properly.</h4>
+          <p>Avani | Mechanical Engineering</p>
+        </div>
+        <span class="badge red">Pending</span>
+      </div>
+
+      <div class="complaint-row">
+        <div>
+          <h4>Vickers Hardness Test Machine is not working.</h4>
+          <p>Anjali | Mechanical Engineering</p>
+        </div>
+        <span class="badge orange">In Progress</span>
+      </div>
+
+      <!-- <div class="complaint-row">
+        <div>
+          <h4>Monitor flickering</h4>
+          <p>Aman • PC-04</p>
+        </div>
+        <span class="badge green">Resolved</span>
+      </div> -->
+<!-- 
+      <div class="complaint-row">
+        <div>
+          <h4>Software installation required</h4>
+          <p>Sneha • PC-21</p>
+        </div>
+        <span class="badge red">Pending</span>
+      </div> -->
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="landing.js"></script>
+</body>
+</html>

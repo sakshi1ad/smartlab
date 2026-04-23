@@ -1,0 +1,54 @@
+<!-- student-login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Login - Smart Lab Portal</title>
+<link rel="stylesheet" href="landing.css">
+</head>
+
+<body>
+
+<section class="login-page">
+
+  <a href="Landing.html" class="back-home">← Back to Home</a>
+
+  <div class="login-box">
+
+    <div class="login-top">
+      <!-- <div class="login-icon">🖥️</div> -->
+      <h1>Student Portal</h1>
+      <p>Log in with your institute email</p>
+    </div>
+
+    <div class="login-card">
+      <h2>Welcome Back</h2>
+      <p>Enter your credentials to access your dashboard</p>
+
+      <form id="studentLoginForm">
+
+        <label>Email Address</label>
+        <input type="email" id="studentEmail" placeholder="2024UGCM005@nitjsr.ac.in">
+
+        <label>Password</label>
+        <input type="password" id="studentPassword" placeholder="••••••••">
+
+        <button type="submit" class="login-btn">Sign In</button>
+
+      </form>
+
+      <div class="switch-login">
+        Staff member?
+        <a href="staff-login.html">Log in here</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<script src="landing.js"></script>
+</body>
+</html>

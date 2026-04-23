@@ -1,0 +1,121 @@
+<!-- staff-labs.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manage Labs</title>
+<link rel="stylesheet" href="landing.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+
+    <div>
+      <h2>Smart Lab</h2>
+
+      <div class="staff-user">
+        <h3>Dr. Priya Nait</h3>
+        <p>Staff</p>
+      </div>
+
+      <nav class="menu-list">
+        <a href="staff-dashboard.html">Overview</a>
+        <a href="staff-notices.html">Notices</a>
+        <a href="staff-lab.html" class="active">Manage Labs</a>
+        <a href="staff-machines.html">Manage Machines</a>
+        <a href="staff-maintenance.html">Maintenance</a>
+        <!-- <a href="#">Complaints</a> -->
+        <a href="staff-messages.html">Messages</a>
+      </nav>
+    </div>
+
+    <a href="Landing.html" class="logout-btn">Logout</a>
+
+  </aside>
+
+  <!-- Main -->
+  <main class="main-content">
+
+    <div class="page-head">
+      <div>
+        <h1>Manage Labs</h1>
+        <p>Configure physical laboratory spaces</p>
+      </div>
+
+      <button class="primary-btn" onclick="openLabModal()">Add New Lab</button>
+    </div>
+
+    <!-- Table -->
+    <div class="card2 table-card">
+
+      <div class="table-wrap">
+        <table class="custom-table">
+
+          <thead>
+            <tr>
+              <th>Lab Name</th>
+              <th>Lab Incharge</th>
+              <th>Machines</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+          <tbody id="labTable">
+
+            <tr>
+              <td>Mechanics of Solid Lab</td>
+              <td>Anil Prasad</td>
+              <td>25</td>
+              <td>
+                <button class="icon-btn edit-btn" onclick="editLab(this)">Edit</button>
+                <button class="icon-btn delete-btn" onclick="deleteLab(this)">Delete</button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Fluid Mechanics Lab</td>
+              <td>Ashok Kumar Barik</td>
+              <td>12</td>
+              <td>
+                <button class="icon-btn edit-btn" onclick="editLab(this)">Edit</button>
+                <button class="icon-btn delete-btn" onclick="deleteLab(this)">Delete</button>
+              </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<!-- Modal -->
+<div class="modal" id="labModal">
+  <div class="modal-box">
+
+    <h2 id="modalTitle">Add New Lab</h2>
+
+    <input type="text" id="labName" placeholder="Lab Name">
+    <input type="text" id="labIncharge" placeholder="Lab Incharge">
+    <input type="number" id="labMachines" placeholder="Machines Count">
+
+    <div class="modal-actions">
+      <button onclick="closeLabModal()" class="cancel-btn">Cancel</button>
+      <button onclick="saveLab()" class="primary-btn">Save</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="landing.js"></script>
+</body>
+</html>

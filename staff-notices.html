@@ -1,0 +1,118 @@
+<!-- staff-notices.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Staff Notices</title>
+<link rel="stylesheet" href="landing.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+
+    <div>
+      <h2>Smart Lab</h2>
+
+      <div class="staff-user">
+        <h3>Dr. Priya Nait</h3>
+        <p>Staff</p>
+      </div>
+
+      <nav class="menu-list">
+        <a href="staff-dashboard.html">Overview</a>
+        <a href="staff-notices.html" class="active">Notices</a>
+        <a href="staff-lab.html">Manage Labs</a>
+        <a href="staff-machines.html">Manage Machines</a>
+        <a href="staff-maintenance.html">Maintenance</a>
+        <!-- <a href="#">Complaints</a> -->
+        <a href="staff-messages.html">Messages</a>
+      </nav>
+    </div>
+
+    <a href="Landing.html" class="logout-btn">Logout</a>
+
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <div class="top-title">
+      <h1>Notice Board</h1>
+      <p>Post announcements and view published notices</p>
+    </div>
+
+    <div class="notice-layout">
+
+      <!-- Left Form -->
+      <div class="card2 post-card">
+
+        <h2>Post Notice</h2>
+        <p class="small-text">Broadcast a new announcement</p>
+
+        <form id="noticeForm">
+
+          <label>Title</label>
+          <input type="text" id="title" placeholder="e.g. Lab Closure">
+
+          <label>Content</label>
+          <textarea id="content" rows="6" placeholder="Write the notice details here..."></textarea>
+
+          <button type="submit">Publish Notice</button>
+
+        </form>
+
+      </div>
+
+      <!-- Right Notices -->
+      <div class="published-area">
+
+        <h3 class="section-title">Published Notices</h3>
+
+        <div id="noticeList">
+
+          <div class="card2 notice-card">
+            <div class="notice-header">
+              <div>
+                <h2>Lab Closed Tomorrow</h2>
+                <span>Lab Assistant</span>
+              </div>
+              <small>22 Apr 2026</small>
+            </div>
+
+            <p class="notice-text">
+              Mechanical Lab will remain closed tomorrow due to equipment servicing.
+            </p>
+          </div>
+
+          <div class="card2 notice-card">
+            <div class="notice-header">
+              <div>
+                <h2>Submission Reminder</h2>
+                <span>Proff Sakshi Kumari</span>
+              </div>
+              <small>21 Apr 2026</small>
+            </div>
+
+            <p class="notice-text">
+              Submit practical files before Friday without fail.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="landing.js"></script>
+</body>
+</html>

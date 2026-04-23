@@ -1,0 +1,100 @@
+<!-- staff-maintenance.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maintenance Panel</title>
+<link rel="stylesheet" href="landing.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+
+    <div>
+      <h2>Smart Lab</h2>
+
+      <div class="staff-user">
+        <h3>Dr. Priya Nait</h3>
+        <p>Staff</p>
+      </div>
+
+      <nav class="menu-list">
+        <a href="staff-dashboard.html">Overview</a>
+        <a href="staff-notices.html">Notices</a>
+        <a href="staff-lab.html">Manage Labs</a>
+        <a href="staff-machines.html">Manage Machines</a>
+        <a href="staff-maintenance.html" class="active">Maintenance</a>
+        <!-- <a href="">Complaints</a> -->
+        <a href="staff-messages.html">Messages</a>
+      </nav>
+    </div>
+
+    <a href="Landing.html" class="logout-btn">Logout</a>
+
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <div class="top-title">
+      <h1>Maintenance Panel</h1>
+      <p>Track machines requiring attention</p>
+    </div>
+
+    <div class="card2">
+
+      <h2 class="section-title">Action Required</h2>
+      <p class="small-text">Machines marked as Faulty or Under Maintenance</p>
+
+      <div id="machineList">
+
+        <!-- Item -->
+        <div class="maintenance-box">
+
+          <div>
+            <div class="machine-top">
+              <h4>Vickers Hardness Test Machine</h4>
+              <span class="badge red">Faulty</span>
+            </div>
+
+            <p>ID: ME004  • Lab: Mechanics of Solid Lab</p>
+            <small>Reported issue: It is not working properly.</small>
+          </div>
+
+          <button class="fix-btn" onclick="markFixed(this)">Mark as Fixed</button>
+
+        </div>
+
+        <!-- Item -->
+        <div class="maintenance-box">
+
+          <div>
+            <div class="machine-top">
+              <h4>Flying Wheel</h4>
+              <span class="badge orange">Under Maintenance</span>
+            </div>
+
+            <p>ID: ME007 • Lab: Mechanics of Solid Lab</p>
+            <small>Reported issue: The wheel is not rotating properly.</small>
+          </div>
+
+          <button class="fix-btn" onclick="markFixed(this)">Mark as Fixed</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="landing.js"></script>
+</body>
+</html>

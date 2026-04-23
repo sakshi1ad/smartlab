@@ -1,0 +1,104 @@
+<!-- student-complaints.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Complaints</title>
+<link rel="stylesheet" href="student.css">
+</head>
+
+<body>
+
+<div class="dashboard2">
+
+  <!-- Sidebar -->
+  <aside class="sidebar2">
+    <h2>Smart Lab</h2>
+
+    <nav class="menu-list2">
+      <a href="student-dashboard.html">Dashboard</a>
+      <a href="student-schedule.html">Schedule</a>
+      <a href="student-notices.html">Notices</a>
+      <a href="student-resources.html">Resources</a>
+      <a href="student-complaints.html" class="active2">Complaints</a>
+    </nav>
+
+    <a href="Landing.html" class="logout-btn2">Logout</a>
+  </aside>
+
+  <!-- Main -->
+  <main class="main-content2">
+
+    <div class="top-title2">
+      <h1>Machine Complaints</h1>
+      <p>Report faulty equipment and track complaints</p>
+    </div>
+
+    <div class="complaint-grid">
+
+      <!-- Complaint Form -->
+      <div class="card1">
+        <h2>Raise Complaint</h2>
+
+        <form id="complaintForm">
+
+          <label>Lab</label>
+          <select id="lab">
+            <option value="">Select Lab</option>
+            <!-- <option>Computer Science Lab</option> -->
+            <!-- <option>Electronics Lab</option> -->
+            <option>Mechanics Of solid Lab</option>
+            <option>Fluid Mechanics Lab</option>
+          </select>
+
+          <label>Machine ID</label>
+          <input type="text" id="machineId" placeholder="e.g. ME005">
+
+          <label>Issue Description</label>
+          <textarea id="issue" placeholder="Describe the issue..."></textarea>
+
+          <button type="submit" class="submit-btn">
+            Submit Complaint
+          </button>
+
+        </form>
+      </div>
+
+      <!-- Complaint History -->
+      <div class="card1">
+        <h2>Your Complaints</h2>
+
+        <div id="complaintList">
+
+          <div class="complaint-box">
+            <div class="complaint-head">
+              <h4>Vickers Hardness Test is not working properly.</h4>
+              <span class="pending">Pending</span>
+            </div>
+            <p>Machine: ME007</p>
+            <p>Lab: Mechanics Of solid Lab</p>
+          </div>
+
+          <!-- <div class="complaint-box">
+            <div class="complaint-head">
+              <h4>Monitor display issue</h4>
+              <span class="progress">In Progress</span>
+            </div>
+            <p>Machine: CS-09</p>
+            <p>Lab: Computer Science Lab</p>
+          </div> -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="student.js"></script>
+</body>
+</html>
